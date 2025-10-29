@@ -1,0 +1,5 @@
+L = [] 
+for i in range (5): 
+    a = input("donner moi un nombre :") 
+    L.append(int(a)) 
+print(f"la somme est {sum(L)}",f" la moyenne est {sum(L)/len(L)}",f"le nombre le plus grand est {max(L)}",f"le nombre le plus petit est {min(L)}")
