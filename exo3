@@ -1,0 +1,8 @@
+n = int(input("Donne un nombre entier : "))
+if n < 0:
+    print("Erreur : nombre négatif")
+else:
+    f = 1
+    for i in range(1, n+1):
+        f *= i
+    print(f"La factorielle de {n} est {f}")
