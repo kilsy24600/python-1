@@ -1,0 +1,23 @@
+# Liste de 10 objets
+objets = ["stylo", "cahier", "livre", "sac", "calculatrice", "gomme", "règle", "marqueur", "agenda", "crayon"]
+# Dictionnaire avec prix correspondants
+prix = {
+    "stylo": 2.5,
+    "cahier": 3.0,
+    "livre": 15.0,
+    "sac": 25.0,
+    "calculatrice": 20.0,
+    "gomme": 1.0,
+    "règle": 1.5,
+    "marqueur": 2.0,
+    "agenda": 7.0,
+    "crayon": 1.2
+}
+prix_totale = sum(prix.values())
+prix_moyen = prix_totale/len(objets)
+prix_bas = min(prix.values())
+prix_haut = max(prix.values())
+print(prix_totale)
+print(prix_moyen)
+print(prix_haut)
+print(prix_bas)
