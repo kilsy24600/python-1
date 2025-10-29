@@ -1,0 +1,27 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Exemple : on crée un dataset fictif (tu peux remplacer par un fichier CSV réel)
+data = {
+    "Jour": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"],
+    "Ventes": [150, 200, 180, 220, 170]
+}
+
+# Créer un DataFrame
+df = pd.DataFrame(data)
+
+# Afficher les 5 premières lignes
+print("5 premières lignes :")
+print(df.head())
+
+# Calculer la moyenne des ventes
+moyenne_ventes = df["Ventes"].mean()
+print(f"\nMoyenne des ventes : {moyenne_ventes}")
+
+# Graphique des ventes
+plt.plot(df["Jour"], df["Ventes"], marker='o')
+plt.title("Ventes de la semaine")
+plt.xlabel("Jour")
+plt.ylabel("Ventes")
+plt.grid(True)
+plt.show()
