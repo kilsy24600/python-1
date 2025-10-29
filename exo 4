@@ -1,11 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Exemple : on crée un dataset fictif (tu peux remplacer par un fichier CSV réel)
-data = {
-    "Jour": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"],
-    "Ventes": [150, 200, 180, 220, 170]
-}
+# Exemple : on crée un dataset fictif (on peux remplacer par un fichier CSV réel)
+data = {"Jour": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"],"Ventes": [150, 200, 180, 220, 170]}
 
 # Créer un DataFrame
 df = pd.DataFrame(data)
