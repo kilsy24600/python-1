@@ -1,0 +1,7 @@
+import numpy as np 
+a = np.array([[45, 63],[52, 4]]) 
+b = np.array([[65, 8],[4, 1]]) 
+print("a + b =\n", a + b) 
+print("a * b =\n",a @ b) 
+print("a Transposée =\n",a.T) 
+print("a déterminent =\n",np.linalg.det(a))
