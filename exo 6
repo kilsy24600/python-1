@@ -1,0 +1,26 @@
+import math
+
+nombres = [12, 7, 5, 18, 9, 3, 15, 11, 6, 8]
+
+# Moyenne
+moyenne = sum(nombres)/len(nombres)
+print("Moyenne :", moyenne)
+
+# Médiane
+nombres.sort()  # trier la liste
+if len(nombres) % 2 == 0:
+    med = (nombres[len(nombres)//2 - 1] + nombres[len(nombres)//2]) / 2
+else:
+    med = nombres[len(nombres)//2]
+print("Médiane :", med)
+
+# Variance et écart-type
+a = 0
+for i in nombres:
+    a += (i - moyenne)**2
+
+variance = a / len(nombres)
+ecart_type = math.sqrt(variance)
+
+print("Variance :", variance)
+print("Écart-type :", ecart_type)
